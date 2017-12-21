@@ -1,0 +1,28 @@
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+#important
+{
+  background-image: url("books.jpg");
+ background-size: cover;
+ background-position: bottom center;
+ height: 300px;
+ width: 50%;
+}
+#important .quote   h1 {
+  border: 3px solid firebrick;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+
+}

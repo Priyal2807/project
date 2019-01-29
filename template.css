@@ -1,0 +1,51 @@
+.demo{
+	font-family: 'Inconsolata', monospace;
+	font-size: 60px;
+	color: #154360;
+	margin-left: 55px;
+	padding: 30px;
+
+}
+.demo:hover{
+	background-color: #E3F2FD;
+	display: block;
+	margin-right: 820px;
+}
+body{
+	background-color: #D7BDE2;
+}
+.one{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 24px;
+	color: #0000FF ;
+	margin-right: 10px;
+	margin-left: 40px;
+
+}
+.one:hover{
+	background-color: #ECEFF1 ;
+}
+.two:hover{
+	background-color: #ECEFF1 ;
+}
+.two{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 24px;
+	color: #0000FF  ;
+	margin-right: 70px;
+	margin-left: 30px;
+}
+.one1{
+	float: left;
+	width: 100px;
+	height: 150px;
+	margin-left: 10px;
+	margin-right: 30px;
+}
+.two2{
+	float: right;
+	width: 100px;
+	height: 110px;
+	margin-left: 10px;
+	margin-right: 10px;
+}

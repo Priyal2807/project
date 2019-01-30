@@ -1,0 +1,21 @@
+#cust{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 30px;
+	border-collapse: collapse;
+	margin-top: 100px;
+	padding: 200px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+#cust td, #cust th{
+	border: 1px solid black;
+  padding: 8px;
+}
+#cust th{
+	background-color: green;
+	color: white;
+}
+#cust tr:nth-child(even)
+{
+	background-color: #BFC9CA  ;
+}

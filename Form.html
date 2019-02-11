@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<title>Cgpa Calculation</title>
+	<script type="text/javascript">
+		function mark()
+		{
+			var name=document.getElementById('name');
+			var rno=document.getElementById('rno');
+			var dept=document.getElementById('dept');
+			var sem1=document.getElementById('sem1');
+			var sem2=document.getElementById('sem2');
+			var sem3=document.getElementById('sem3');
+			var sem4=document.getElementById('sem4');
+			var sem5=document.getElementById('sem5');
+			var sem6=document.getElementById('sem6');
+			var sem7=document.getElementById('sem7');
+			var sem8=document.getElementById('sem8');
+			var cg=document.getElementById('cg');
+			var dist=document.getElementById('dist');
+			if (name.value == 0) {alert("please enter the name");return false;}
+			if(rno.value == 0){alert("please enter the roll no"); return false;}
+			if (dept.value == 0) {alert("please enter the department");return false;}
+			if(sem1.value == 0){alert("please enter some marks");return false;}
+			if(sem2.value == 0){alert("please enter some marks");return false;}
+			if(sem3.value == 0){alert("please enter some marks");return false;}
+			if(sem4.value == 0){alert("please enter some marks");return false;}
+			if(sem5.value == 0){alert("please enter some marks");return false;}
+			if(sem6.value == 0){alert("please enter some marks");return false;}
+			if(sem7.value == 0){alert("please enter some marks");return false;}
+			if(sem8.value == 0){alert("please enter some marks");return false;}
+			if(sem1.value > 10){alert("wrong cgpa"); return false;}
+			if(sem2.value > 10){alert("wrong cgpa"); return false;}
+			if(sem3.value > 10){alert("wrong cgpa"); return false;}
+			if(sem4.value > 10){alert("wrong cgpa"); return false;}
+			if(sem5.value > 10){alert("wrong cgpa"); return false;}
+			if(sem6.value > 10){alert("wrong cgpa"); return false;}
+			if(sem7.value > 10){alert("wrong cgpa"); return false;}
+			if(sem8.value > 10){alert("wrong cgpa"); return false;}
+			cg.value = parseInt(sem1.value)+parseInt(sem2.value)+parseInt(sem3.value)+parseInt(sem4.value)+parseInt(sem5.value)+parseInt(sem6.value)+parseInt(sem7.value)+parseInt(sem8.value);
+			cg.value = cg.value/8;if(cg.value>8){dist.value = "first";}else{dist.value="second";}
+		}
+	</script>
+</head>
+<body>
+<form >
+<label >Student name:</label><input type="text" id="name" ><br>
+<label>Registration number:</label><input type="text" id="rno" ><br>
+<label>Department :</label><input type="text" id="dept" ><br>
+<label>Grade Point for sem 1:</label> <input type="text" id="sem1" ><br>
+<label>Grade Point for sem 2: </label><input type="text" id="sem2" ><br>
+<label>Grade Point for sem 3: </label><input type="text" id="sem3" ><br>
+<label>Grade Point for sem 4: </label><input type="text" id="sem4" ><br>
+<label>Grade Point for sem 5: </label><input type="text" id="sem5" ><br>
+<label>Grade Point for sem 6: </label><input type="text" id="sem6" ><br>
+<label>Grade Point for sem 7:</label> <input type="text" id="sem7" ><br>
+<label>Grade Point for sem 8:</label> <input type="text" id="sem8" ><br>
+<label>Overall CGPA:</label><input type="text" id="cg" ><br>
+<label>Distinction:</label><input type="text" id="dist" ><br>
+<input type="button" value="calculate" onclick="mark()">
+<input type="button" value="reset">
+
+</form>
+</body>
+</html>

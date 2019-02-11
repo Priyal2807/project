@@ -1,0 +1,19 @@
+input
+{
+	margin-left: 200px;
+	margin-top: 0px;
+	display: inline-block;
+}
+body{
+	margin-left: 600px;
+	margin-right: 500px;
+	margin-top: 50px;
+	display: block;
+	font-family: 'PT Sans', sans-serif;
+	font-size:15px;
+	background-color: linen;
+}
+label{
+	
+	display: inline-block;
+}
